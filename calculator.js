@@ -1,8 +1,13 @@
 let btns = document.querySelectorAll(".num-button");
 let allBtns = document.querySelectorAll(".button");
 let resultBox = document.querySelectorAll("#result-box");
-let clearBtn = document.querySelectorAll("#clear");
-let totalBtn = document.querySelectorAll("#total");
+let clearBtn = document.querySelector("#clear");
+let totalBtn = document.querySelector("#total");
+allBtns.forEach((item) => {
+  item.addEventListener("click", () => {
+    console.log("Hello!");
+  });
+});
 
 let btnSpread = [...btns];
 let allBtnSpread = [...allBtns];
